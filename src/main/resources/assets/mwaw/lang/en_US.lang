@@ -1,0 +1,103 @@
+﻿//////////ITEMS///////////
+item.fireshard.name=Fire Shard
+item.lightningshard.name=Lightning Shard
+item.airshard.name=Air Shard
+item.earthshard.name=Earth Shard
+item.watershard.name=Water Shard
+item.darkshard.name=Dark Shard
+item.darkstaff.name=Dark Staff
+item.lightshard.name=Light Shard
+item.sandshard.name=Sand Shard
+item.lightstaff.name=Light Staff
+item.firestaff.name=Fire Staff
+item.airstaff.name=Air Staff
+item.earthstaff.name=Earth Staff
+item.lightningstaff.name=Lightning Staff
+item.waterstaff.name=Water Staff
+item.halloweenstaff.name=Halloween Staff
+item.christmasstaff.name=Christmas Staff
+item.airegg.name=Air Egg
+item.halloweenegg.name=Halloween Egg
+item.fireegg.name=Fire Egg
+item.lightningegg.name=Lightning Egg
+item.earthegg.name=Earth Egg
+item.wateregg.name=Water Egg
+item.darkegg.name=Dark Egg
+item.lightegg.name=Light Egg
+item.MWAWegg.name=Egg
+
+//////////BLOCKS///////////
+tile.present.name=Present
+
+//////////MOBS///////////
+entity.mwaw.firewitch.name=Fire Witch
+entity.mwaw.firemeteorite.name=Fire Meteorite
+entity.mwaw.firebat.name=Fire Bat
+entity.mwaw.firepet.name=Fire Dragon
+entity.mwaw.firepet2.name=Fire Dragon
+entity.mwaw.firepet3.name=Fire Dragon
+entity.mwaw.fireegg.name=Fire Egg
+entity.mwaw.lightningwitch.name=Lightning Witch
+entity.mwaw.lightninggolem.name=Lightning Golem
+entity.mwaw.lightningbolt.name=Lightning Bolt
+entity.mwaw.lightningball.name=Lightning Ball
+entity.mwaw.lightningpet.name=Lightning Beast
+entity.mwaw.lightningpet2.name=Lightning Beast
+entity.mwaw.lightningpet3.name=Lightning Beast
+entity.mwaw.lightningegg.name=Lightning Egg
+entity.mwaw.airwitch.name=Air Witch
+entity.mwaw.tornado.name=Tornado
+entity.mwaw.minitornado.name=Mini-Tornado
+entity.mwaw.windball.name=Wind Ball
+entity.mwaw.earthwitch.name=Earth Witch
+entity.mwaw.earthminion.name=Earth Golem
+entity.mwaw.earthgoodminion.name=Good Earth Golem
+entity.mwaw.earthpet.name=Earth Golem
+entity.mwaw.earthpet2.name=Earth Golem
+entity.mwaw.earthpet3.name=Earth Golem
+entity.mwaw.earthegg.name=Earth Egg
+entity.mwaw.halloweenwitch.name=Halloween Witch(2014 Halloween Event)
+entity.mwaw.windphoenix.name=Air Phoenix
+entity.mwaw.windphoenix2.name=Air Phoenix
+entity.mwaw.windphoenix3.name=Air Phoenix
+entity.mwaw.halloweenegg.name=Halloween Egg
+entity.mwaw.airegg.name=Air Egg
+entity.mwaw.halloweenpet.name=Halloween Pumpkin
+entity.mwaw.halloweenpetevolved.name=Halloween Pumpking
+entity.mwaw.pumpkinairstrike.name=Explosive Pumpkin
+entity.mwaw.lightwitch.name=Light Witch
+entity.mwaw.lightpet.name=Light Pet
+entity.mwaw.darkwitch.name=Dark Witch
+entity.mwaw.darkegg.name=Dark Egg
+entity.mwaw.darkpet.name=Dark Spirit
+entity.mwaw.darkpet2.name=Dark Spirit
+entity.mwaw.darkpet3.name=Dark Spirit
+entity.mwaw.deathcircle.name=Death Circle
+entity.mwaw.darksummoner.name=Dark Summoner
+entity.mwaw.darkmark.name=Dark Mark
+entity.mwaw.enderhole.name=EnderHole
+entity.mwaw.lightheal.name=Light Heal
+entity.mwaw.lightpet.name=Light Angel
+entity.mwaw.lightpet2.name=Light Angel
+entity.mwaw.christmaswitch.name=Christmas Witch(2014 Christmas Event)
+entity.mwaw.icicle.name=Icicle
+entity.mwaw.sword.name=Candy Cane
+entity.mwaw.rifle.name=Rifle
+entity.mwaw.bigsnowgolem.name=Big Daddy Snow Golem
+entity.mwaw.waterwitch.name=Water Witch
+entity.mwaw.watersquid.name=Giant Water Squid
+entity.mwaw.waterpet.name=Water Pet
+entity.mwaw.wateregg.name=Water Egg
+entity.mwaw.waterspout.name=Water Spout
+entity.mwaw.waterminion.name=Water Minion
+entity.mwaw.sandwitch.name=Sand Witch
+
+///////ACHIEVEMENTS////////
+
+
+//////CHAT//////
+chat.mwaw.lookup=Look Up?
+chat.mwaw.nopower=One does not simply use the staff...
+
+//////DEATHS//////
+death.attack.LightArrow=Receive Divine Punishment, death..

@@ -1,0 +1,321 @@
+package com.hoopawolf.mwaw.models;
+
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.MathHelper;
+import org.lwjgl.opengl.GL11;
+
+public class ModelEarthPet2 extends ModelBase {
+    //fields
+    ModelRenderer Head;
+    ModelRenderer Head_Gem;
+    ModelRenderer Top_Right_Headgear_Piece;
+    ModelRenderer Top_Left_Headgear_Piece;
+    ModelRenderer Right_Head_Rock;
+    ModelRenderer Left_Head_Rock;
+    ModelRenderer Front_Head_Rock_1;
+    ModelRenderer Front_Head_Rock_2;
+    ModelRenderer Front_Head_Rock_3;
+    ModelRenderer Back_Right_Head_Rock_1;
+    ModelRenderer Back_Right_Head_Rock_2;
+    ModelRenderer Back_Left_Head_Rock_1;
+    ModelRenderer Back_Left_Head_Rock_2;
+    ModelRenderer Upper_Torso;
+    ModelRenderer Lower_Torso;
+    ModelRenderer Scarf_1;
+    ModelRenderer Scarf_2;
+    ModelRenderer Scarf_3;
+    ModelRenderer Scarf_4;
+    ModelRenderer Scarf_Button;
+    ModelRenderer Right_Arm_1;
+    ModelRenderer Right_Arm_2;
+    ModelRenderer Right_Hand;
+    ModelRenderer Right_Palm;
+    ModelRenderer Dirt;
+    ModelRenderer Thumb;
+    ModelRenderer Index_Finger;
+    ModelRenderer Middle_Finger;
+    ModelRenderer Ring_Finger;
+    ModelRenderer Pinky;
+    ModelRenderer Left_Shoulder;
+    ModelRenderer Left_Arm;
+    ModelRenderer Left_Hand;
+
+    public ModelEarthPet2() {
+        textureWidth = 128;
+        textureHeight = 64;
+
+        Head = new ModelRenderer(this, 47, 24);
+        Head.addBox(-3F, -5F, -3.7F, 6, 5, 6);
+        Head.setRotationPoint(0F, 5F, 0F);
+        Head.setTextureSize(128, 64);
+        Head.mirror = true;
+        setRotation(Head, 0F, 0F, 0F);
+        Head_Gem = new ModelRenderer(this, 55, 20);
+        Head_Gem.addBox(-5F, -5F, -4.7F, 3, 3, 1);
+        Head_Gem.setRotationPoint(0F, 5F, 0F);
+        Head_Gem.setTextureSize(128, 64);
+        Head_Gem.mirror = true;
+        this.convertToChild(Head, Head_Gem);
+        setRotation(Head_Gem, 0F, 0F, 0.7853982F);
+        Top_Right_Headgear_Piece = new ModelRenderer(this, 37, 17);
+        Top_Right_Headgear_Piece.addBox(-4.5F, -5.5F, -1F, 3, 1, 6);
+        Top_Right_Headgear_Piece.setRotationPoint(0F, 5F, 0F);
+        Top_Right_Headgear_Piece.setTextureSize(128, 64);
+        Top_Right_Headgear_Piece.mirror = true;
+        this.convertToChild(Head, Top_Right_Headgear_Piece);
+        setRotation(Top_Right_Headgear_Piece, 0.2617994F, -0.5235988F, 0F);
+        Top_Left_Headgear_Piece = new ModelRenderer(this, 63, 17);
+        Top_Left_Headgear_Piece.addBox(1.5F, -5.5F, -1F, 3, 1, 6);
+        Top_Left_Headgear_Piece.setRotationPoint(0F, 5F, 0F);
+        Top_Left_Headgear_Piece.setTextureSize(128, 64);
+        Top_Left_Headgear_Piece.mirror = true;
+        this.convertToChild(Head, Top_Left_Headgear_Piece);
+        setRotation(Top_Left_Headgear_Piece, 0.2617994F, 0.5235988F, 0F);
+        Right_Head_Rock = new ModelRenderer(this, 41, 24);
+        Right_Head_Rock.addBox(-2F, -6F, -3F, 3, 3, 3);
+        Right_Head_Rock.setRotationPoint(0F, 5F, 0F);
+        Right_Head_Rock.setTextureSize(128, 64);
+        Right_Head_Rock.mirror = true;
+        this.convertToChild(Head, Right_Head_Rock);
+        setRotation(Right_Head_Rock, 0F, 0F, -0.7853982F);
+        Left_Head_Rock = new ModelRenderer(this, 65, 24);
+        Left_Head_Rock.addBox(3F, -1F, -3F, 3, 3, 3);
+        Left_Head_Rock.setRotationPoint(0F, 5F, 0F);
+        Left_Head_Rock.setTextureSize(128, 64);
+        Left_Head_Rock.mirror = true;
+        this.convertToChild(Head, Left_Head_Rock);
+        setRotation(Left_Head_Rock, 0F, 0F, -0.7853982F);
+        Front_Head_Rock_1 = new ModelRenderer(this, 51, 14);
+        Front_Head_Rock_1.addBox(-2F, -7F, -3.5F, 4, 2, 4);
+        Front_Head_Rock_1.setRotationPoint(0F, 5F, 0F);
+        Front_Head_Rock_1.setTextureSize(128, 64);
+        Front_Head_Rock_1.mirror = true;
+        this.convertToChild(Head, Front_Head_Rock_1);
+        setRotation(Front_Head_Rock_1, 0F, 0F, 0F);
+        Front_Head_Rock_2 = new ModelRenderer(this, 53, 10);
+        Front_Head_Rock_2.addBox(-1.5F, -3F, -3F, 3, 1, 3);
+        Front_Head_Rock_2.setRotationPoint(0F, 0F, 0F);
+        Front_Head_Rock_2.setTextureSize(128, 64);
+        Front_Head_Rock_2.mirror = true;
+        this.convertToChild(Head, Front_Head_Rock_2);
+        setRotation(Front_Head_Rock_2, 0F, 0F, 0F);
+        Front_Head_Rock_3 = new ModelRenderer(this, 55, 7);
+        Front_Head_Rock_3.addBox(-1F, -9F, -2F, 2, 1, 2);
+        Front_Head_Rock_3.setRotationPoint(0F, 5F, 0F);
+        Front_Head_Rock_3.setTextureSize(128, 64);
+        Front_Head_Rock_3.mirror = true;
+        this.convertToChild(Head, Front_Head_Rock_3);
+        setRotation(Front_Head_Rock_3, 0F, 0F, 0F);
+        Back_Right_Head_Rock_1 = new ModelRenderer(this, 33, 13);
+        Back_Right_Head_Rock_1.addBox(-3.5F, -4F, 4F, 2, 2, 2);
+        Back_Right_Head_Rock_1.setRotationPoint(0F, 5F, 0F);
+        Back_Right_Head_Rock_1.setTextureSize(128, 64);
+        Back_Right_Head_Rock_1.mirror = true;
+        this.convertToChild(Head, Back_Right_Head_Rock_1);
+        setRotation(Back_Right_Head_Rock_1, 0.5235988F, -0.1919862F, 0F);
+        Back_Right_Head_Rock_2 = new ModelRenderer(this, 41, 13);
+        Back_Right_Head_Rock_2.addBox(-1.5F, -5F, 2.5F, 2, 2, 2);
+        Back_Right_Head_Rock_2.setRotationPoint(0F, 5F, 0F);
+        Back_Right_Head_Rock_2.setTextureSize(128, 64);
+        Back_Right_Head_Rock_2.mirror = true;
+        this.convertToChild(Head, Back_Right_Head_Rock_2);
+        setRotation(Back_Right_Head_Rock_2, 0.2617994F, -0.1919862F, 0F);
+        Back_Left_Head_Rock_1 = new ModelRenderer(this, 77, 13);
+        Back_Left_Head_Rock_1.addBox(1.5F, -4F, 4F, 2, 2, 2);
+        Back_Left_Head_Rock_1.setRotationPoint(0F, 5F, 0F);
+        Back_Left_Head_Rock_1.setTextureSize(128, 64);
+        Back_Left_Head_Rock_1.mirror = true;
+        this.convertToChild(Head, Back_Left_Head_Rock_1);
+        setRotation(Back_Left_Head_Rock_1, 0.5235988F, 0.1919862F, 0F);
+        Back_Left_Head_Rock_2 = new ModelRenderer(this, 69, 13);
+        Back_Left_Head_Rock_2.addBox(-0.5F, -5F, 2.5F, 2, 2, 2);
+        Back_Left_Head_Rock_2.setRotationPoint(0F, 5F, 0F);
+        Back_Left_Head_Rock_2.setTextureSize(128, 64);
+        Back_Left_Head_Rock_2.mirror = true;
+        this.convertToChild(Head, Back_Left_Head_Rock_2);
+        setRotation(Back_Left_Head_Rock_2, 0.2617994F, 0.1919862F, 0F);
+        Upper_Torso = new ModelRenderer(this, 40, 35);
+        Upper_Torso.addBox(-5.5F, 0F, -4F, 11, 8, 8);
+        Upper_Torso.setRotationPoint(0F, 5F, 0F);
+        Upper_Torso.setTextureSize(128, 64);
+        Upper_Torso.mirror = true;
+        setRotation(Upper_Torso, 0F, 0F, 0F);
+        Lower_Torso = new ModelRenderer(this, 46, 51);
+        Lower_Torso.addBox(-4F, 8F, -3F, 8, 7, 6);
+        Lower_Torso.setRotationPoint(0F, 5F, 0F);
+        Lower_Torso.setTextureSize(128, 64);
+        Lower_Torso.mirror = true;
+        setRotation(Lower_Torso, 0F, 0F, 0F);
+        Scarf_1 = new ModelRenderer(this, 78, 18);
+        Scarf_1.addBox(-11F, 0F, -4.5F, 16, 2, 9);
+        Scarf_1.setRotationPoint(0F, 5F, 0F);
+        Scarf_1.setTextureSize(128, 64);
+        Scarf_1.mirror = true;
+        setRotation(Scarf_1, 0F, 0F, -0.2617994F);
+        Scarf_2 = new ModelRenderer(this, 88, 8);
+        Scarf_2.addBox(-11F, -1F, -4.5F, 11, 1, 9);
+        Scarf_2.setRotationPoint(0F, 5F, 0F);
+        Scarf_2.setTextureSize(128, 64);
+        Scarf_2.mirror = true;
+        setRotation(Scarf_2, 0F, 0F, -0.2617994F);
+        Scarf_3 = new ModelRenderer(this, 0, 3);
+        Scarf_3.addBox(-11F, -2F, -4.5F, 8, 1, 9);
+        Scarf_3.setRotationPoint(0F, 5F, 0F);
+        Scarf_3.setTextureSize(128, 64);
+        Scarf_3.mirror = true;
+        setRotation(Scarf_3, 0F, 0F, -0.2617994F);
+        Scarf_4 = new ModelRenderer(this, 70, 29);
+        Scarf_4.addBox(-2F, -1F, -4.5F, 8, 2, 9);
+        Scarf_4.setRotationPoint(5.5F, 6F, 0F);
+        Scarf_4.setTextureSize(128, 64);
+        Scarf_4.mirror = true;
+        setRotation(Scarf_4, 0F, 0F, 0.5061455F);
+        Scarf_Button = new ModelRenderer(this, 72, 40);
+        Scarf_Button.addBox(3F, 0F, -5F, 2, 2, 1);
+        Scarf_Button.setRotationPoint(0F, 5F, 0F);
+        Scarf_Button.setTextureSize(128, 64);
+        Scarf_Button.mirror = true;
+        setRotation(Scarf_Button, 0F, 0F, 0F);
+        Right_Arm_1 = new ModelRenderer(this, 9, 13);
+        Right_Arm_1.addBox(-2F, 0F, -1.5F, 3, 9, 3);
+        Right_Arm_1.setRotationPoint(-5.5F, 6F, 0F);
+        Right_Arm_1.setTextureSize(128, 64);
+        Right_Arm_1.mirror = true;
+        setRotation(Right_Arm_1, 0F, 0F, 0.2268928F);
+        Right_Arm_2 = new ModelRenderer(this, 9, 25);
+        Right_Arm_2.addBox(-2F, 1F, 8F, 3, 8, 3);
+        Right_Arm_2.setRotationPoint(-5.5F, 6F, 0F);
+        Right_Arm_2.setTextureSize(128, 64);
+        Right_Arm_2.mirror = true;
+        setRotation(Right_Arm_2, -1.308997F, 0F, 0.2268928F);
+        Right_Hand = new ModelRenderer(this, 7, 36);
+        Right_Hand.addBox(-2.5F, 9F, 7.5F, 4, 2, 4);
+        Right_Hand.setRotationPoint(-5.5F, 6F, 0F);
+        Right_Hand.setTextureSize(128, 64);
+        Right_Hand.mirror = true;
+        setRotation(Right_Hand, -1.308997F, 0F, 0.2268928F);
+        Right_Palm = new ModelRenderer(this, 9, 46);
+        Right_Palm.addBox(-2.5F, 11F, 9.5F, 4, 3, 2);
+        Right_Palm.setRotationPoint(-5.5F, 6F, 0F);
+        Right_Palm.setTextureSize(128, 64);
+        Right_Palm.mirror = true;
+        setRotation(Right_Palm, -1.308997F, 0F, 0.2268928F);
+        Dirt = new ModelRenderer(this, 11, 42);
+        Dirt.addBox(-2F, 11F, 9F, 3, 3, 1);
+        Dirt.setRotationPoint(-5.5F, 6F, 0F);
+        Dirt.setTextureSize(128, 64);
+        Dirt.mirror = true;
+        setRotation(Dirt, -1.308997F, 0F, 0.2268928F);
+        Thumb = new ModelRenderer(this, 1, 46);
+        Thumb.addBox(-3F, 11F, 8F, 2, 1, 2);
+        Thumb.setRotationPoint(-5.5F, 6F, 0F);
+        Thumb.setTextureSize(128, 64);
+        Thumb.mirror = true;
+        setRotation(Thumb, -1.308997F, 0F, 0.2268928F);
+        Index_Finger = new ModelRenderer(this, 6, 51);
+        Index_Finger.addBox(-2.5F, 14F, 8F, 1, 1, 2);
+        Index_Finger.setRotationPoint(-5.5F, 6F, 0F);
+        Index_Finger.setTextureSize(128, 64);
+        Index_Finger.mirror = true;
+        setRotation(Index_Finger, -1.308997F, 0F, 0.2268928F);
+        Middle_Finger = new ModelRenderer(this, 12, 51);
+        Middle_Finger.addBox(-1F, 14F, 8F, 1, 1, 2);
+        Middle_Finger.setRotationPoint(-5.5F, 6F, 0F);
+        Middle_Finger.setTextureSize(128, 64);
+        Middle_Finger.mirror = true;
+        setRotation(Middle_Finger, -1.308997F, 0F, 0.2268928F);
+        Ring_Finger = new ModelRenderer(this, 18, 51);
+        Ring_Finger.addBox(0.5F, 14F, 8F, 1, 1, 2);
+        Ring_Finger.setRotationPoint(-5.5F, 6F, 0F);
+        Ring_Finger.setTextureSize(128, 64);
+        Ring_Finger.mirror = true;
+        setRotation(Ring_Finger, -1.308997F, 0F, 0.2268928F);
+        Pinky = new ModelRenderer(this, 21, 47);
+        Pinky.addBox(1.5F, 12F, 8F, 1, 1, 2);
+        Pinky.setRotationPoint(-5.5F, 6F, 0F);
+        Pinky.setTextureSize(128, 64);
+        Pinky.mirror = true;
+        setRotation(Pinky, -1.308997F, 0F, 0.2268928F);
+        Left_Shoulder = new ModelRenderer(this, 104, 31);
+        Left_Shoulder.addBox(0F, -2.5F, -2.5F, 5, 5, 5);
+        Left_Shoulder.setRotationPoint(5.5F, 6F, 0F);
+        Left_Shoulder.setTextureSize(128, 64);
+        Left_Shoulder.mirror = true;
+        setRotation(Left_Shoulder, 0F, 0F, 0F);
+        Left_Arm = new ModelRenderer(this, 108, 41);
+        Left_Arm.addBox(0F, 2F, -1.5F, 3, 7, 3);
+        Left_Arm.setRotationPoint(5.5F, 6F, 0F);
+        Left_Arm.setTextureSize(128, 64);
+        Left_Arm.mirror = true;
+        this.convertToChild(Left_Shoulder, Left_Arm);
+        setRotation(Left_Arm, 0F, 0F, -0.3839724F);
+        Left_Hand = new ModelRenderer(this, 102, 51);
+        Left_Hand.addBox(6.5F, 2.5F, -3F, 6, 6, 6);
+        Left_Hand.setRotationPoint(5.5F, 6F, 0F);
+        Left_Hand.setTextureSize(128, 64);
+        Left_Hand.mirror = true;
+        this.convertToChild(Left_Shoulder, Left_Hand);
+        setRotation(Left_Hand, 0F, 0F, 0.5934119F);
+    }
+
+    protected void convertToChild(ModelRenderer parParent, ModelRenderer parChild) {
+        // move child rotation point to be relative to parent
+        parChild.rotationPointX -= parParent.rotationPointX;
+        parChild.rotationPointY -= parParent.rotationPointY;
+        parChild.rotationPointZ -= parParent.rotationPointZ;
+        // make rotations relative to parent
+        parChild.rotateAngleX -= parParent.rotateAngleX;
+        parChild.rotateAngleY -= parParent.rotateAngleY;
+        parChild.rotateAngleZ -= parParent.rotateAngleZ;
+        // create relationship
+        parParent.addChild(parChild);
+    }
+
+    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+        super.render(entity, f, f1, f2, f3, f4, f5);
+        setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+
+        GL11.glScalef(1.5F, 1.5F, 1.5F);
+        GL11.glTranslatef(0.0F, -0.5F, 0.0F);
+
+        Head.render(f5);
+        Upper_Torso.render(f5);
+        Lower_Torso.render(f5);
+        Scarf_1.render(f5);
+        Scarf_2.render(f5);
+        Scarf_3.render(f5);
+        Scarf_4.render(f5);
+        Scarf_Button.render(f5);
+        Right_Arm_1.render(f5);
+        Right_Arm_2.render(f5);
+        Right_Hand.render(f5);
+        Dirt.render(f5);
+        Right_Palm.render(f5);
+        Index_Finger.render(f5);
+        Middle_Finger.render(f5);
+        Ring_Finger.render(f5);
+        Thumb.render(f5);
+        Pinky.render(f5);
+        Left_Shoulder.render(f5);
+    }
+
+    private void setRotation(ModelRenderer model, float x, float y, float z) {
+        model.rotateAngleX = x;
+        model.rotateAngleY = y;
+        model.rotateAngleZ = z;
+    }
+
+    public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
+        super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+
+        ////////////////////////////////HEAD///////////////////////////////////////
+        this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);
+        this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
+
+        ///////////////////////////////////ARMS//////////////////////////////////////////
+        Left_Shoulder.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
+    }
+
+}

@@ -1,0 +1,20 @@
+[
+{
+  "modid": "mwaw",
+  "name": "Elemental Witch Mod",
+  "description": "Elemental Witch Mod, for an adventurous world!",
+  "version": "1.8-0.0.6",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "HoopAWolf"
+  ],
+  "credits": "All you people who played this mod!",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
